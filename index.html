@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Card</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Keep this div with the class card! -->
+  <main class="container">
+    <div class="card">
+      <!-- Write your markup in here! Feel free to delete the title and the text! -->
+      <img class="main-image" src="donut.png" alt="symbol" />
+      <!-- <img class="icon" src="rotate.png" alt="symbol" /> -->
+      <h1 class="title">Pink Frosted Donut</h1>
+      <!-- Meet our new and original donut, essential to make your range stand out with a touch of
+        color. -->
+      <p class="description"> Meet our new and original donut, essential to make your range stand out with a touch of
+        color. </p>
+      <input type="range" min="10" max="100" value="50" class="slider" id="myRange">
+      <button class="btn-1" onclick="alert('Thank You, your order has been placed')"> Order <span id="demo"></span>
+        donuts now</button>
+      <!-- <button class="btn-1" onclick="alert('Thank You, your order has been placed')">Order Now</button> -->
+    </div>
+
+  </main>
+
+  <!-- responsive hover is possible through Vanilla Tilt Library -->
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script> 	VanillaTilt.init(document.querySelector(".card"), {
+      max: 10,
+      scale: 1.05,
+      speed: 2000,
+      easing: "cubic-bezier(.03,.98,.52,.99)",
+    });</script>
+</body>
+
+</html>
