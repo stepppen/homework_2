@@ -2,6 +2,12 @@
  * A very basic CSS reset:
  * More about CSS resets: https://meyerweb.com/eric/tools/css/reset/
  */
+:root {
+  --pink: rgb(255, 0, 187);
+  --purple: rgb(174, 0, 255);
+}
+
+
 * {
   box-sizing: border-box;
   font-size: 16px;
@@ -12,8 +18,12 @@
 body {
   background-image: url('donut_bkgd.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100vh;
+  background-size: 100%;
+  background-color: var(--pink);
 }
+
+/* background-size: 100% 100vh;
+
 
 /** 
  * Card sizing and positioning.
@@ -80,7 +90,7 @@ body {
   margin: 15px 0px auto auto;
   border: none;
   padding: 12px 20px;
-  background: rgb(255, 0, 187);
+  background: var(--pink);
   border-radius: 50px;
   transition: 0.2s;
 }
@@ -97,7 +107,7 @@ body {
   padding-right: 30px;
   padding-left: 20px;
   transition: 0.2s;
-  background: rgb(174, 0, 255);
+  background: var(--purple);
 }
 
 .btn-1:hover:after {
@@ -108,7 +118,7 @@ body {
 .slider {
   margin: 50px 0px auto auto;
   width: 100%;
-  height: 25px;
+  height: 10px;
   border-radius: 20px;
   background: white;
   outline: none;
@@ -118,23 +128,27 @@ body {
 
 .slider:hover {
   opacity: 1;
+  transition: 0.2s ease-out;
+  height: 15px;
 }
+
+/* -moz-range-thumb wird meines Wissens nach nur von Firefox unterstützt */
+.slider::-moz-range-thumb:hover {
+  background: var(--purple);
+}
+
 
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 20px;
+  transition: 0.5s;
   border: none;
-  background: rgb(255, 0, 187);
+  background: var(--pink);
   cursor: pointer;
 }
 
-/* .slider::-webkit-slider-thumb {
-  appearance: none;
-  border: none;
-  border-radius: 20px;
-  width: 25px;
-  height: 25px;
-  background: rgb(255, 0, 187);
-  cursor: pointer;
-} */
+
+
+
+/* Second html */

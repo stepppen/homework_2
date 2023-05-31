@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ordered.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <main class="global-div" id="animate-area">
+        <div class="deco">
+            <div>
+                <img src="upper2.png" alt="" width="300px">
+            </div>
+            <div>
+                <img src="upper1.png" alt="" width="300px">
+            </div>
+            <div>
+                <img src="upper2.png" alt="" width="300px">
+            </div>
+            <div>
+                <img src="upper1.png" alt="" width="300px">
+            </div>
+            <div>
+                <img src="upper2.png" alt="" width="300px">
+            </div>
+            <div>
+                <img src="upper2.png" alt="" width="300px">
+            </div>
+            <div>
+                <img src="upper1.png" alt="" width="300px">
+            </div>
+            <div>
+                <img src="upper2.png" alt="" width="300px">
+            </div>
+        </div>
+        <div class="card-div">
+            <div class="upper-div">
+                <h1 class="Ty">Thank you, the order has been placed!</h1>
+                <img src="tick.png" alt="icon" width="100px">
+                <h2 class="subheader">Your 12 month subscribtion to <span class="confirmation"></span> is now activated.
+                </h2>
+                <p class="description-2">We hope you're prepared for the sugar rush that will make your wildest dreams
+                    feel dull in comparison.</p>
+                <h2 class="subheader">You are now paying</h2>
+
+                <div class="priceFlex">
+                    <h1 class="price">&dollar;49</h1>
+                    <p class="description-3">per month</p>
+                </div>
+            </div>
+    </main>
+
+    <!-- responsive hover is possible through Vanilla Tilt Library -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script> 	VanillaTilt.init(document.querySelector(".card-div"), {
+            max: 10,
+            scale: 1.05,
+            speed: 2000,
+            easing: "cubic-bezier(.03,.98,.52,.99)",
+        });</script>
+
+</body>
+
+</html>
