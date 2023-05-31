@@ -1,4 +1,4 @@
-// indexed.html
+// index.html
 const card = document.querySelector(".card");
 const donut = document.querySelector(".main-image");
 const title = document.querySelector(".title");
@@ -20,6 +20,7 @@ card.addEventListener("mouseenter", (e) => {
   description.style.transition = "all 0.5s ease";
   description.style.transform = "translateY(10px)";
 });
+
 //Animate Out 
 card.addEventListener("mouseleave", (e) => {
   donut.style.transform = "translateZ(0px) rotateZ(0deg)";
@@ -27,14 +28,6 @@ card.addEventListener("mouseleave", (e) => {
   description.style.transform = "translateZ(0px)";
 
 });
-
-window.onload = () => {
-  const transition_el = document.querySelector('.transition');
-
-  setTimeout(() => {
-    transition_el.classList.remove('is-active')
-  }, 500)
-}
 
 // Slider
 
@@ -46,54 +39,21 @@ slider.oninput = function () {
   output.innerHTML = this.value;
 }
 
-// Transition
+// button
 function zoom() {
-  button.style.transition = '0.5s ease';
-  button.style.transform = 'scale(30)';
   window.location = './ordered.html'
-  setTimeout(() => {
-    button.style.opacity = 0;
-  }, 500)
-  // setTimeout(() => {
-  //   window.location = './ordered.html'
-  // }, 600)
+
+  // intial idea had an animation but it didn't work as I wanted:
+
+  // button.style.transition = '0.5s ease';
+  // button.style.transform = 'scale(30)';
   // window.location = './ordered.html'
+  // setTimeout(() => {
+  //   button.style.opacity = 0;
+  // }, 500)
+
 }
 
-
-// const state = {
-//   animations: ['zoom'],
-//   view: 'slide'
-// }
-
-// const fade = Vue.component('zoom', {
-//   template: '#page',
-//   methods: {
-//     enter(el, done) {
-//       TweenMax.fromTo(el, 1, {
-//         autoAlpha: 0,
-//         scale: 1.5,
-//       }, {
-//         autoAlpha: 1,
-//         scale: 1,
-//         transformOrigin: '50% 50%',
-//         ease: Power4.easeOut,
-//         onComplete: done
-//       });
-//     },
-//     leave(el, done) {
-//       TweenMax.fromTo(el, 1, {
-//         autoAlpha: 1,
-//         scale: 1,
-//       }, {
-//         autoAlpha: 0,
-//         scale: 0.8,
-//         ease: Power4.easeOut,
-//         onComplete: done
-//       });
-//     }
-//   }
-// })
 
 
 

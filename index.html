@@ -15,33 +15,21 @@
 </head>
 
 <body>
-  <!-- <div class="bkgd">
-    <img src="donut_bkgd.jpg" alt="donut_bkgd">
-  </div> -->
-  <div class="transition transition-1 is-active"></div>
-
   <!-- Keep this div with the class card! -->
   <main class="container" id="page">
     <div class="card">
       <!-- Write your markup in here! Feel free to delete the title and the text! -->
       <img class="main-image" src="donut.png" alt="symbol" />
-      <!-- <img class="icon" src="rotate.png" alt="symbol" /> -->
       <h1 class="title">Pink Frosted Donut</h1>
-      <!-- Meet our new and original donut, essential to make your range stand out with a touch of
-        color. -->
       <p class="description"> Meet our new and original donut, essential to make your range stand out with a touch of
         color. </p>
       <input type="range" min="10" max="100" value="50" class="slider" id="rangeSlider">
-      <!-- <a href="./ordered.html"><button class="btn-1" id='btn-main' onclick="zoom()"> Order <span
-            id="confirmation"></span>
-          donuts now</button></a> -->
       <button class="btn-1" id='btn-main' onclick="zoom()"> Order <span id="confirmation"></span>
         donuts now</button>
-      <!-- <button class="btn-1" onclick="alert('Thank You, your order has been placed')">Order Now</button> -->
     </div>
   </main>
 
-  <!-- responsive hover is possible through Vanilla Tilt Library -->
+  <!-- responsive hover is possible through Vanilla js Library -->
   <script type="text/javascript" src="vanilla-tilt.js"></script>
   <script> 	VanillaTilt.init(document.querySelector(".card"), {
       max: 10,

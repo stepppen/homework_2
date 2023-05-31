@@ -4,9 +4,6 @@ const thankYou = document.querySelector(".Ty");
 const subheader = document.querySelector(".subheader");
 const paragraph = document.querySelector(".description-2");
 
-// subheader.style.transition = "all 0.5s ease";
-// subheader.style.transform = "translateY(7px)";
-
 cardDiv.addEventListener("mousemove", (e) => {
     let xAxis = (window.innerWidth / 2 - e.pageX) / 20;
 });

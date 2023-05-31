@@ -22,8 +22,6 @@ body {
   background-color: var(--pink);
 }
 
-/* background-size: 100% 100vh;
-
 
 /** 
  * Card sizing and positioning.
@@ -147,8 +145,3 @@ body {
   background: var(--pink);
   cursor: pointer;
 }
-
-
-
-
-/* Second html */
