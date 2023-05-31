@@ -1,3 +1,4 @@
+// indexed.html
 const card = document.querySelector(".card");
 const donut = document.querySelector(".main-image");
 const title = document.querySelector(".title");
@@ -18,7 +19,6 @@ card.addEventListener("mouseenter", (e) => {
   title.style.transform = "translateY(7px)";
   description.style.transition = "all 0.5s ease";
   description.style.transform = "translateY(10px)";
-
 });
 //Animate Out 
 card.addEventListener("mouseleave", (e) => {
